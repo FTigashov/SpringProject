@@ -6,9 +6,9 @@
 </head>
 <body>
 <form action="#" th:action="@{/student-create}" th:object="${student}" method="post">
-    <label for="name">name</label>
+    <label for="name">Name</label>
     <input type="text" th:field="*{name}" id="name" placeholder="name">
-    <label for="age">name</label>
+    <label for="age">Age</label>
     <input type="text" th:field="*{age}" id="age" placeholder="age">
     <input type="submit" value="Create Student">
 </form>

@@ -6,13 +6,13 @@
 </head>
 <body>
 <form action="#" th:action="@{/student-update}" th:object="${student}" method="post">
-    <label for="id">ID</label>
-    <input readonly type="number" th:field="*{id}" id="id" placeholder="ID">
+    <label for="id">Id</label>
+    <input readonly type="number" th:field="*{id}" id="id" placeholder="id">
     <br/>
-    <label for="name">name</label>
+    <label for="name">Name</label>
     <input type="text" th:field="*{name}" id="name" placeholder="name">
     <br/>
-    <label for="age">name</label>
+    <label for="age">Age</label>
     <input type="text" th:field="*{age}" id="age" placeholder="age">
     <br/>
     <input type="submit" value="Update Student">

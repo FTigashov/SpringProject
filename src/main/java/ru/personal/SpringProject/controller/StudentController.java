@@ -40,13 +40,13 @@ public class StudentController {
     }
 
     @GetMapping("/student-delete/{id}")
-    public String deleteStudent(@PathVariable("id") Long id) {
+    public String deleteStudent(@PathVariable("id") Integer id) {
         service.deleteById(id);
         return "redirect:/students";
     }
 
     @GetMapping("/student-update/{id}")
-    public String updateStudentForm(@PathVariable("id") Long id, Model model) {
+    public String updateStudentForm(@PathVariable("id") Integer id, Model model) {
         Student student = service.findById(id);
         model.addAttribute("student", student);
         return "/student-update";

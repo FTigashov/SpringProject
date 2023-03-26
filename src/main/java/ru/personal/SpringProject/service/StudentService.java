@@ -17,7 +17,7 @@ public class StudentService {
         this.repository = repository;
     }
 
-    public Student findById(Long id) {
+    public Student findById(Integer id) {
         return repository.getById(id);
     }
 
@@ -29,7 +29,7 @@ public class StudentService {
         return repository.save(student);
     }
 
-    public void deleteById(Long id) {
+    public void deleteById(Integer id) {
         repository.deleteById(id);
     }
 }

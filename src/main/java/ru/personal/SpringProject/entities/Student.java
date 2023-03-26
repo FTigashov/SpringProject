@@ -2,22 +2,21 @@ package ru.personal.SpringProject.entities;
 
 
 import lombok.Data;
-
 import javax.persistence.*;
 
-@Entity
 @Data
+@Entity
 @Table(name = "students")
 public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private Long id;
+    private int id;
 
     @Column(name = "name")
     private String name;
 
     @Column(name = "age")
-    private Integer age;
+    private int age;
 }
 

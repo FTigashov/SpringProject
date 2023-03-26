@@ -7,5 +7,5 @@ import ru.personal.SpringProject.entities.Student;
 
 
 @Repository
-public interface StudentRepository extends JpaRepository<Student, Long> {
+public interface StudentRepository extends JpaRepository<Student, Integer> {
 }
